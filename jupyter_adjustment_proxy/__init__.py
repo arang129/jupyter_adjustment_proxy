@@ -4,7 +4,7 @@ Return config on servers to start web services from JupyterLab
 See https://jupyter-server-proxy.readthedocs.io/en/latest/server-process.html
 for more information.
 """
-__version__ = '0.01'
+__version__ = '0.02'
 
 import os
 
@@ -30,7 +30,7 @@ def setup_adjustment_proxy():
         'environment': {},
         'timeout': 30.0,
         'launcher_entry': {
-            'title': '成績修正系統',
+            'title': '成績管理系統',
             'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'adjustment.svg'),
         }
     }
